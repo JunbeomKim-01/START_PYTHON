@@ -12,7 +12,21 @@ dic = {'name': 'Kim', 'age': 16}
 print(dic)
 dic["kind"] = "hi"
 print(dic)
+
 # 순서가 아니라 Key를 넣는 것이 포인트
 # Key 중복X
 print(dic.keys())
 print(dic.values())
+
+# 집합,중복 x, 순서가 없다. 중복되는 데이터를 다룰 때 사용된다.
+sl = set([1, 2, 3])
+#sl = {1, 2, 3}
+print(sl)
+l = [1, 2, 2, 3, 4, 5, 3, 4, 5]
+newList = list(set(l))  # set()집합 메서드
+print(newList)  # 중복이 제거된 LIst 출력
+
+# 교집합
+p1 = set([1, 2, 3, 4, 5, 6])
+p2 = set([3, 4, 5, 6, 7])
+print(p1.intersection(p2))  # 교집합 출력
