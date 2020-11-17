@@ -1,4 +1,4 @@
-# 튜블고 리스트
+# 튜블과 리스트
 from copy import copy  # 값을 복사
 t1 = (1, 2, 3, 4, 5, 'a', 'b')
 # del t1[0]  # 리스트경우 0번째 삭제 ,오류
@@ -7,11 +7,18 @@ t2 = (3, 4)
 print(t1+t2)  # 튜블 더하기
 print(t1*3)  # t1 튜블을 3번 출력
 
+days = ["MON", "TUE", "Wed", "THUR", "FRI"]  # list
+print(days)
+print("MON" in days)  # False
+print(days[2])  # WED
+print(len(days))
+days.reverse()  # 리버스
+days.append("SAT")  # ADD SAT
 
 # 딕셔너리
 dic = {'name': 'Kim', 'age': 16}
 print(dic)
-dic["kind"] = "hi"
+dic["kind"] = "hi"  # 딕셔너리 추가
 print(dic)
 
 # 순서가 아니라 Key를 넣는 것이 포인트,Key 중복X
@@ -54,3 +61,23 @@ b = copy(a)
 a[1] = 4
 print(a)
 print(b)
+# 제어문
+# 조건문 반복문
+
+money = True
+if money:
+    print("True")
+else:
+    print("nope")
+
+a = 1
+b = 2
+if a < b:
+    print("vsv")
+else:
+    print("das")
+
+if False or False:
+    print("hi")
+else:
+    print("hey")
