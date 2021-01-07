@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 
-cap = cv2.VideoCapture("C:\Users\KOREA\Desktop\ddd.mp4")
+# cap = cv2.VideoCapture("C:\Users\KOREA\Desktop\ddd.mp4")
 
 
 def roi_mask(img, color=[255]):
