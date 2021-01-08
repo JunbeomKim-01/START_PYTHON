@@ -3,6 +3,7 @@ import pandas as pd
 
 URL = 'https://raw.githubusercontent.com/blackdew/tensorflow1/master/csv/boston.csv'
 boston = pd.read_csv(URL)
+
 print(boston.columns)
 boston.head()
 

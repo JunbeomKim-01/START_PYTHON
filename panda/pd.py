@@ -1,5 +1,6 @@
 # 라이브러리 사용
-import panda as pd
+import pandas as pd
+
 
 ###########################
 # 파일로부터 데이터 읽어오기
