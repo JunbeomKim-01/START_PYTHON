@@ -1,6 +1,7 @@
 import tensorflow as tf
 import pandas as pd
 
+
 URL = 'https://raw.githubusercontent.com/blackdew/tensorflow1/master/csv/boston.csv'
 boston = pd.read_csv(URL)
 
@@ -10,6 +11,7 @@ boston.head()
 # 변수 분리
 ehrflq = boston[['crim', 'zn', 'indus', 'chas', 'nox', 'rm', 'age', 'dis', 'rad', 'tax',
                  'ptratio', 'b', 'lstat']]
+
 whdthr = boston[['medv']]
 print(ehrflq.shape, whdthr.shape)
 
